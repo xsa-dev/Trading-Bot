@@ -8,9 +8,9 @@ echo "▶️  Preparing..."
 [ -d /tmp/freqtrade-manager/install/trading-bot ] || mkdir /tmp/freqtrade-manager/install/trading-bot
 
 echo "▶️  Downloading some required Docker images (wait some seconds/minutes while downloading)..."
-docker pull --quiet ph3nol/freqtrade:latest
-docker pull --quiet ph3nol/freqtrade-ui:latest
-docker pull --quiet ph3nol/freqtrade-manager:latest
+docker pull --quiet freqtradeorg/freqtrade:latest
+docker pull --quiet freqtradeorg/freqtrade-ui:latest
+docker pull --quiet freqtradeorg/freqtrade-manager:latest
 
 echo "▶️  Downloading/Installing Trading Bot..."
 if [ -d "/usr/local/bin" ]; then
